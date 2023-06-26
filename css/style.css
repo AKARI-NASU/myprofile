@@ -1,0 +1,127 @@
+body {
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ヘッダー(ナビゲーション) */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto 20px auto;
+  max-width: 960px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+/* MyProfileの部分 */
+.home {
+  margin-left: 20px;
+  padding: 0 20px 0 20px;
+  border: solid 1px #000000;
+}
+
+/* メニューの部分 */
+
+.menu > a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* メインビジュアル */
+.main-visual {
+  width: 100%;
+  height: 400px;
+}
+
+/* 見出しの文字 */
+h1 {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 34px;
+}
+
+/* About */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px auto 20px auto;
+  padding: 10px;
+  max-width: 960px;
+}
+
+/* プロフィール画像 */
+.about-img {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  /* 画像の縦横比を維持したままボックスを埋めたいとき使用 */
+  object-fit: cover;  
+  border: solid 3px #999;
+  padding: 3px;
+}
+
+/* 名前の文字 */
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* プロフィールの説明部分 */
+.content {
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+li {
+  font-size: 18px;
+}
+
+/* Works */
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto 20px auto;
+  max-width: 960px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* worksの画像と説明部分 */
+.works-item {
+  padding: 0 10px 60px 10px;
+  width: 25%;
+}
+
+img {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+/* フッター */
+footer p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* 横幅が767pxまでの場合 */
+@media (max-width: 767px) {
+  .works-item {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+}
